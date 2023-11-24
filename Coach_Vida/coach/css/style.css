@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui;;
+    background-color: #01172F; /* Color de fondo */
+    /* Pattern from https://www.heropatterns.com/ */
+    color: #fff; /* Color del texto */
+    font-size: 16px;
+    padding-top: 56px; /* Ajusta el contenido para evitar que se solape con la barra de navegación */
+}
+
+/* Sección Principal */
+.seccion-principal {
+    width: 100%;
+    height: 630px;
+    background: url("https://jooinn.com/images1280_/man-sitting-on-edge-facing-sunset-2.jpg ") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 90px;
+    margin-bottom: -50px;
+    color: #fff; /* Color del texto en esta sección */
+}
+
+.seccion-principal h1 {
+    margin-top: 50px;
+}
+
+.seccion-principal h5 {
+    margin: 40px;
+}
+
+/* Clase personalizada */
+.my-custom-class {
+    color: #00bfff; /* Color azul personalizado */
+}
+
+/* Botón personalizado */
+.btn {
+    border-color: #00bfff; /* Color del borde del botón */
+    color: #00bfff; /* Color del texto del botón */
+}
+
+.btn-outline-warning:hover {
+    color: #000000; /* Cambia el color del texto cuando se pasa el cursor */
+    background-color: #00bfff; /* Cambia el color de fondo cuando se pasa el cursor */
+    border-color: #00bfff; /* Cambia el color del borde cuando se pasa el cursor */
+}
+
+/* Estilo para el enlace de la barra de navegación */
+.navbar-nav li.nav-item:hover > a.nav-link {
+    color: #00bfff ; /* Cambia el color al pasar el cursor */
+}
+
+/* Estilo para el botón de solicitud al pasar el cursor */
+#btn_solicitar:hover {
+    background-color: #00bfff; /* Cambia el fondo al pasar el cursor */
+    color: #fff; /* Cambia el color del texto al pasar el cursor */
+}
+
+
+.navbar {
+    background-color: #01172F;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Asegura que la barra de navegación esté sobre otros elementos */
+}
+
+/* Estilos para la sección Servicios */
+
+/* Estilos para la sección Servicios */
+#Servicios {
+    background-color: #fff; /* Color de fondo */
+    padding: 80px 0; /* Espaciado interno */
+    
+}
+
+#Servicios h2 {
+    color: #01172F; /* Color del encabezado */
+    margin-bottom: 30px; /* Espaciado inferior */
+    text-align: center;
+}
+
+#Servicios p {
+    color: #01172F;
+    text-align: center;
+}
+
+/* Estilos para las tarjetas */
+.card {
+    border:none; /* Sin borde */
+}
+
+.card-img-top {
+    object-fit: contain; /* Ajustar la imagen al contenedor manteniendo las proporciones */
+    height: 170px; /* Altura de la imagen */
+    width: 50%; /* Ancho del contenedor al 100% */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Sombra */
+    transition: transform 0.3s ease; /* Transición suave para efecto hover */
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1); /* Efecto de escala al pasar el mouse sobre la tarjeta */
+}
+
+
+.card-title {
+    font-size: 24px; /* Tamaño del título */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.card-text {
+    font-size: 16px; /* Tamaño del texto */
+}
+
+/* Estilo para los títulos de sección */
+section h2 {
+    color: #01172F; /* Color de fondo para hacer que los títulos destaquen en el fondo claro */
+    background-color: #fff; /* Color del texto para hacer que los títulos destaquen en el fondo oscuro */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para los párrafos en las secciones */
+section p {
+    margin-bottom: 20px;
+}
+
+/* Estilo para las secciones de contenido */
+section {
+    background-color: #ffffff; /* Color de fondo para las secciones de contenido */
+    padding: 30px;
+    border-radius: 10px;
+}
+.agenda {
+    position: relative;
+    text-align: center;
+    background: url('/coach/img/name3.svg') center/cover;
+}
+
+.agenda h1{
+ background:url('/coach/img/name3.svg') center/cover;
+}
+section p {
+    margin-bottom: 20px;
+    color: #00bfff;
+}
+
+/* Estilo del formulario */
+.footer-form {
+    background-color: rgba(15, 50, 224, 0.2); /* Color con transparencia */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Estilo del footer */
+.bg-primary {
+    background-color: #01172F !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.py-5 {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.container {
+    max-width: 960px;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+/* Estilo para desactivar el subrayado en los enlaces de redes sociales */
+.col-md-4 ul.list-unstyled li a.text-white {
+    text-decoration: none;
+}
+
+/* Estilos para el footer */
+.footer-links {
+    margin-bottom: 20px; /* Espaciado opcional debajo del texto 'Contactame' */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px; /* Espaciado opcional entre los íconos */
+    color: white; /* Color del ícono */
+    font-size: 24px; /* Tamaño del ícono */
+}
+
+/* Puedes agregar más estilos según tus necesidades */
+
+   
+   .footer-links h4{
+     font-size: 20px;
+     color: #fff;
+     margin-bottom: 25px;
+     font-weight: 500;
+     border-bottom: 2px solid #4097ef;
+     padding-bottom: 10px;
+     display: inline-block;
+   }
+   
+   .social-links a{
+     display:inline-block;
+     min-height: 40px;
+     width: 40px;
+     background-color: rgba(255, 255, 255, 0.2);
+     margin: 0 10px 10px ;
+     text-align: center;
+     line-height: 40px;
+     border-radius: 50px;
+     color: #fff;
+     transition: all .5 ease;
+   }
+   
+   .social-links a:hover{
+     background-color: aqua;
+   }
+
+   /* Estilos para el footer */
+
+
+   .form-control {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-control:focus {
+    border-color: #66afe9;
+    outline: none;
+  }
+  
+  .btn {
+    background-color: #66afe9;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px 12px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #559de8;
+  }
+  
+  /* Estilos específicos del formulario */
+
+  
+  #contact-form .col-md-6 {
+    width: 50%;
+  }
+  
+  #contact-form .btn {
+    margin-top: 20px;
+  }
